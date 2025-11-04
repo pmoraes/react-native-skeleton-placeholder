@@ -3,11 +3,13 @@
   "version": "5.2.4",
   "description": "SkeletonPlaceholder is a React Native library to easily create an amazing loading effect.",
   "main": "lib/skeleton-placeholder.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --max-warnings 0",
     "build": "rm -rf ./lib && mkdir ./lib && tsc",
-    "prepack": "yarn build"
+    "prepack": "yarn build",
+    "prepare": "yarn build"
   },
   "keywords": [
     "skeleton",
@@ -17,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/chramos/react-native-skeleton-placeholder"
+    "url": "https://github.com/pmoraes/react-native-skeleton-placeholder"
   },
   "author": "Henrique Ramos <chenrique.ramos12@gmail.com> (https://github.com/chramos)",
   "license": "ISC",
@@ -33,7 +35,9 @@
     "eslint-plugin-react-native": "4.0.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
     "prettier": "2.7.1",
-    "react-native-linear-gradient": "^2.8.4",
+    "react-native-linear-gradient": "^2.8.4"
+  },
+  "dependencies": {
     "typescript": "^4.0.2"
   },
   "peerDependencies": {
